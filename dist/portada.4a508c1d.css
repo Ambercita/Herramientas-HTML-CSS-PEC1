@@ -1,3 +1,7 @@
+* {
+  font-family: Playfair Display, serif;
+}
+
 nav {
   padding: initial;
   flex-direction: row;

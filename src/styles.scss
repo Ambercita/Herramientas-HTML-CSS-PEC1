@@ -1,4 +1,18 @@
-h1 {
-    color: hotpink;
-    font-family: cursive;
+* {
+  font-family: "Playfair Display", serif;;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    column-gap: .78125vw;
+    padding: initial;
+
+    li {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
   }
+  

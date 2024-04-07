@@ -1,1 +1,0 @@
-{"mappings":"ACAA,QAAQ,GAAG,CAAC","sources":["<anon>","src/app.js"],"sourcesContent":["(function () {\nvar $3015b282b063971c$exports = {};\nconsole.log(\"Hello world!\");\n\n})();\n//# sourceMappingURL=portada.a50f63ff.js.map\n","console.log('Hello world!');"],"names":["console","log"],"version":3,"file":"portada.a50f63ff.js.map"}

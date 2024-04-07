@@ -1,5 +1,13 @@
-h1 {
-  color: #ff69b4;
-  font-family: cursive;
+nav {
+  padding: initial;
+  flex-direction: row;
+  column-gap: .78125vw;
+  display: flex;
+}
+
+nav li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 /*# sourceMappingURL=portada.4a508c1d.css.map */

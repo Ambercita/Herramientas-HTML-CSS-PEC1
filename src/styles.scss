@@ -22,7 +22,18 @@ $gradient-radial: radial-gradient(#9b5de5ff, #f15bb5ff, #fee440ff, #00bbf9ff, #0
 
 $header-text-shadow-size: 5px;
 
-header > h1 {
+body {
+  background: url(./img/background.jpg) no-repeat center center fixed;
+  animation: fluid 15s linear infinite;  
+}
+
+@keyframes fluid {
+  from { background-position: 0 0; }
+  to { background-position: 100% 0; }
+}
+
+header {
+    h1 {
   font-family: $font-display;
   font-size: 3rem;
   color: $amethyst;
@@ -44,8 +55,16 @@ header > h1 {
       calc($header-text-shadow-size * 16) calc($header-text-shadow-size * 16) 0 $aquamarine;
   }
 }
+  img {
+  position: absolute;
+  top: 15;
+  right: 30;
+  height: 100px;
+  width: 100px;
+}
+}
 
-header > img {
+.bird {
   height: 100px;
   animation: run 10s linear infinite;
   position: absolute;
@@ -60,7 +79,30 @@ header > img {
   }
 }
 
+nav {
+  font-family: $font-menu;
+  display: flex;
+  justify-content: flex-start;
 
-  
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    li {
+      margin: .5rem 0;
+      a {
+        text-decoration: none;
+        color: $amethyst;
+        -webkit-text-stroke: .2px white;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        text-transform: uppercase;
+        &:hover {
+          color: $brilliant-rose;
+        }
+      }
+    }
+  }
+}
 
-  
+

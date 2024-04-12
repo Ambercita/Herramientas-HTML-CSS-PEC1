@@ -1,0 +1,171 @@
+@import 'variables';
+
+
+body {
+  background: url(../img/background.jpg) no-repeat center center fixed;
+  animation: fluid 15s linear infinite;
+}
+
+@keyframes fluid {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+$header-text-shadow-size: 5px;
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  > * {
+    flex: 1;
+  }
+
+  h1 {
+    padding-top: 1rem;
+    font-family: $font-display;
+    font-size: 3rem;
+    color: $amethyst;
+    -webkit-text-stroke: 0.5px white;
+    text-shadow: calc($header-text-shadow-size * 1)
+        calc($header-text-shadow-size * 1) 0 $deep-sky-blue,
+      calc($header-text-shadow-size * 2) calc($header-text-shadow-size * 2) 0
+        $brilliant-rose,
+      calc($header-text-shadow-size * 3) calc($header-text-shadow-size * 3) 0
+        $maize,
+      calc($header-text-shadow-size * 4) calc($header-text-shadow-size * 4) 0
+        $aquamarine;
+    transition: text-shadow 0.5s;
+    text-align: center;
+    margin: 0;
+    &:hover {
+      text-shadow: calc($header-text-shadow-size * 4)
+          calc($header-text-shadow-size * 4) 0 $deep-sky-blue,
+        calc($header-text-shadow-size * 8) calc($header-text-shadow-size * 8) 0
+          $brilliant-rose,
+        calc($header-text-shadow-size * 12) calc($header-text-shadow-size * 12)
+          0 $maize,
+        calc($header-text-shadow-size * 16) calc($header-text-shadow-size * 16)
+          0 $aquamarine;
+    }
+  }
+
+  img {
+    position: absolute;
+    top: 15;
+    right: 30;
+    height: 100px;
+    width: 100px;
+  }
+}
+
+.bird {
+  height: 100px;
+  animation: run 10s linear infinite;
+  position: absolute;
+}
+
+@keyframes run {
+  0% {
+    transform: translateX(-20vw);
+  }
+  100% {
+    transform: translateX(120vw);
+  }
+}
+
+nav {
+  font-family: $font-menu;
+  display: flex;
+  justify-content: flex-start;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0.2rem;
+    li {
+      margin: 0.2rem 0;
+
+      a {
+        text-decoration: none;
+        color: $amethyst;
+        -webkit-text-stroke: 0.2px white;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        text-transform: uppercase;
+        &:hover {
+          color: $maize;
+          -webkit-text-stroke: 0.2px $amethyst;
+        }
+      }
+    }
+  }
+}
+
+main {
+  padding-top: 5rem;
+  img {
+    width: 90vw;
+    height: auto;
+    display: block;
+    margin: -5rem auto 0 auto;
+  }
+
+  a {
+    font-family: $font-menu;
+    text-decoration: none;
+    color: $maize;
+    border: 1px solid $amethyst;
+    border-radius: 1rem 4rem 3rem 5rem;
+    padding: 0.5rem 1rem;
+    background-color: #00bbf9ff;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    &:hover {
+      color: $aquamarine;
+      background-color: $amethyst;
+    }
+
+    &.active {
+      color: $brilliant-rose;
+      text-decoration: dotted;
+    }
+  }
+}
+
+blockquote {
+  font-family: $font-text;
+  font-size: 1.5rem;
+  color: $brilliant-rose;
+  -webkit-text-stroke: 0.5px gray;
+  text-align: center;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  position: relative;
+
+  &::before {
+    content: "";
+    background: url(../img/rrrainbow.svg);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+

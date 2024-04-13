@@ -110,10 +110,17 @@ main {
   padding-top: 5rem;
 }
 
+main p {
+  color: #f15bb5;
+  margin: -2rem 2rem 2rem 3rem;
+  font-family: Tilt Neon, sans-serif;
+  font-size: 1.5rem;
+}
+
 main img {
   width: 90vw;
   height: auto;
-  margin: -5rem auto 0;
+  margin: 2rem auto 3rem;
   display: block;
 }
 
@@ -182,5 +189,32 @@ footer p {
   margin: .2rem;
   padding: .2rem;
   font-family: Tilt Neon, sans-serif;
+}
+
+.category {
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  font-family: Tilt Neon, sans-serif;
+  display: flex;
+}
+
+.category h2 {
+  color: #f15bb5;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.category img {
+  max-width: 70vw;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.category figcaption {
+  color: #9b5de5;
+  margin-top: .25rem;
 }
 /*# sourceMappingURL=portada.a097447b.css.map */

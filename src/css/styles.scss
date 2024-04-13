@@ -19,8 +19,6 @@ body {
   }
 }
 
-$header-text-shadow-size: 5px;
-
 header {
   display: flex;
   flex-direction: row;
@@ -122,11 +120,18 @@ nav {
 main {
   padding-top: 5rem;
 
+  p {
+    font-family: $font-text;
+    margin: -2rem 2rem 2rem 3rem;
+    font-size: 1.5rem;
+    color: $brilliant-rose;
+  }
+
   img {
     width: 90vw;
     height: auto;
     display: block;
-    margin: -5rem auto 0 auto;
+    margin: 2rem auto 3rem auto;
   }
 
   a {
@@ -196,5 +201,34 @@ footer {
     color: white;
     padding: .2rem;
     margin: .2rem;
+  }
+}
+
+
+.category {
+  font-family: $font-text;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1rem auto;  
+  flex-direction: column;
+
+  h2 {
+    font-size: 2rem;
+    color: $brilliant-rose;
+    font-weight: bolder;
+  }
+
+  img {
+    max-width: 70vw;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  figcaption {
+    margin-top: 0.25rem;
+    color: $amethyst;
   }
 }

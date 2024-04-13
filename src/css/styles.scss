@@ -1,4 +1,7 @@
-@import 'variables';
+@import "variables";
+@import "header";
+@import "slides";
+@import "footer";
 
 html {
   overflow-x: hidden;
@@ -16,104 +19,6 @@ body {
   }
   to {
     background-position: 100% 0;
-  }
-}
-
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  overflow: hidden;
-  width: 100vw;
-
-  > * {
-    flex: 1;
-  }
-
-  > a {
-    text-decoration: none;
-  }
-
-  h1 {
-    padding-top: 1rem;
-    font-family: $font-display;
-    font-size: 3rem;
-    color: $amethyst;
-    -webkit-text-stroke: 0.5px white;
-    text-shadow: calc($header-text-shadow-size * 1)
-        calc($header-text-shadow-size * 1) 0 $deep-sky-blue,
-      calc($header-text-shadow-size * 2) calc($header-text-shadow-size * 2) 0
-        $brilliant-rose,
-      calc($header-text-shadow-size * 3) calc($header-text-shadow-size * 3) 0
-        $maize,
-      calc($header-text-shadow-size * 4) calc($header-text-shadow-size * 4) 0
-        $aquamarine;
-    transition: text-shadow 0.5s;
-    text-align: center;
-    margin: 0;
-    &:hover {
-      text-shadow: calc($header-text-shadow-size * 4)
-          calc($header-text-shadow-size * 4) 0 $deep-sky-blue,
-        calc($header-text-shadow-size * 8) calc($header-text-shadow-size * 8) 0
-          $brilliant-rose,
-        calc($header-text-shadow-size * 12) calc($header-text-shadow-size * 12)
-          0 $maize,
-        calc($header-text-shadow-size * 16) calc($header-text-shadow-size * 16)
-          0 $aquamarine;
-    }
-  }
-
-  img {
-    position: absolute;
-    top: 15;
-    right: 30;
-    height: 100px;
-    width: 100px;
-  }
-}
-
-.bird {
-  height: 100px;
-  animation: run 10s linear infinite;
-  position: absolute;
-}
-
-@keyframes run {
-  0% {
-    transform: translateX(-20vw);
-  }
-  100% {
-    transform: translateX(120vw);
-  }
-}
-
-nav {
-  font-family: $font-menu;
-  display: flex;
-  justify-content: flex-start;
-  padding-left: .2rem;
-
-  ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    padding: 0.2rem;
-    li {
-      margin: 0.2rem 0;
-
-      a {
-        text-decoration: none;
-        color: $amethyst;
-        -webkit-text-stroke: .2px white;
-        font-size: 1.5rem;
-        font-weight: bolder;
-        text-transform: uppercase;
-        &:hover {
-          color: $maize;
-          -webkit-text-stroke: 0.2px $amethyst;
-        }
-      }
-    }
   }
 }
 
@@ -140,7 +45,7 @@ main {
     color: $maize;
     border: 1px solid $amethyst;
     border-radius: 1rem 4rem 3rem 5rem;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     background-color: #00bbf9ff;
     font-size: 1.5rem;
     font-weight: bolder;
@@ -166,7 +71,7 @@ blockquote {
   font-family: $font-text;
   font-size: 1.5rem;
   color: $brilliant-rose;
-  -webkit-text-stroke: .5px gray;
+  -webkit-text-stroke: 0.5px gray;
   text-align: center;
   margin: 1.5rem auto;
   padding: 1rem;
@@ -175,7 +80,7 @@ blockquote {
   &::before {
     content: "";
     background: url(../img/rrrainbow.svg);
-    opacity: .5;
+    opacity: 0.5;
     top: 0;
     left: 0;
     bottom: 0;
@@ -185,50 +90,5 @@ blockquote {
   }
 }
 
-footer {
-  background: url(../img/wave.svg) repeat-x bottom;
-  height: 250px;
-  background-size: contain;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  margin-top: -6rem;
-  align-items: flex-start;
-  padding-bottom: .5rem;
-
-  p {
-    font-family: $font-text;
-    color: white;
-    padding: .2rem;
-    margin: .2rem;
-  }
-}
 
 
-.category {
-  font-family: $font-text;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 1rem auto;  
-  flex-direction: column;
-
-  h2 {
-    font-size: 2rem;
-    color: $brilliant-rose;
-    font-weight: bolder;
-  }
-
-  img {
-    max-width: 70vw;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
-
-  figcaption {
-    margin-top: 0.25rem;
-    color: $amethyst;
-  }
-}

@@ -1,96 +1,51 @@
+import Lenis from "@studio-freight/lenis";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
-let bodyScrollBar = Scrollbar.init(document.body, {
-  damping: 0.1,
-  delegateTo: document,
-});
-ScrollTrigger.scrollerProxy(".scroller", {
-  scrollTop(value) {
-    if (arguments.length) {
-      bodyScrollBar.scrollTop = value;
-    }
-    return bodyScrollBar.scrollTop;
-  },
-});
-bodyScrollBar.addListener(ScrollTrigger.update);
 
 
+/* SCROLL FLUIDO */
+const lenis = new Lenis();
 
-
-
-
-
-gsap.set(".panel", { zIndex: (i, target, targets) => targets.length - i });
-
-var images = gsap.utils.toArray('.panel:not(.purple)');
-
-images.forEach((image, i) => {
-  
-  var tl = gsap.timeline({
-    
-    scrollTrigger: {
-      trigger: "section.black",
-      scroller: ".scroller",
-      start: () => "top -" + (window.innerHeight*(i+0.5)),
-      end: () => "+=" + window.innerHeight,
-      scrub: true,
-      toggleActions: "play none reverse none",
-      invalidateOnRefresh: true,     
-    }
-    
-  })
-  
-  tl
-  .to(image, { height: 0 })
-  ;
-  
+lenis.on("scroll", (e) => {
+  console.log(e);
 });
 
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
 
 
+let container = document.querySelector(".slides"),
+    slides = gsap.utils.toArray(".slide"),
+    getRatio = (el) => window.innerHeight / (window.innerHeight + el.offsetHeight);
 
+slides.forEach((slide, i) => {
+  let bg = slide.querySelector("img"),
+      content = slide.querySelector("h3"),
+      tl = gsap.timeline({
+            scrollTrigger: {
+              trigger: slide,
+              start: () => i ? "top bottom" : "top top",
+              end: "bottom top",
+              scrub: true,
+              invalidateOnRefresh: true
+            }
+          });
 
-
-
-gsap.set(".panel-text", { zIndex: (i, target, targets) => targets.length - i });
-
-var texts = gsap.utils.toArray('.panel-text');
-
-texts.forEach((text, i) => {
-  
-  var tl = gsap.timeline({
-    
-    scrollTrigger: {
-      trigger: "section.black",
-      scroller: ".scroller",
-      start: () => "top -" + (window.innerHeight*i),
-      end: () => "+=" + window.innerHeight,
-      scrub: true,
-      toggleActions: "play none reverse none",
-      invalidateOnRefresh: true,     
-    }
-    
-  })
-  
-  tl
-  .to(text, { duration: 0.33, opacity: 1, y:"50%" })  
-  .to(text, { duration: 0.33, opacity: 0, y:"0%" }, 0.66)
-  ;
-  
-});
-
-
-
-
-
-ScrollTrigger.create({
-
-    trigger: "section.black",
-    scroller: ".scroller",
-    scrub: true,
-    markers: true,
-    pin: true,
-    start: () => "top top",
-    end: () => "+=" + ((images.length + 1) * window.innerHeight),
-    invalidateOnRefresh: true,
-
+  tl.fromTo(bg, {
+      y: () => i ? -window.innerHeight * getRatio(slide) : 0
+    }, {
+      y: () => window.innerHeight * (1 - getRatio(slide)),
+      ease: "none"
+    });
+  tl.fromTo(content, {
+      y: () => i ? window.innerHeight * -getRatio(slide) * 2 : 0
+    }, {
+      y: () => window.innerHeight * getRatio(slide) * 2,
+      ease: "none"
+    }, 0);
 });

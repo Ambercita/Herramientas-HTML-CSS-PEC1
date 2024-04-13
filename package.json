@@ -22,6 +22,7 @@
     "rimraf": "^5.0.5"
   },
   "dependencies": {
+    "@studio-freight/lenis": "^1.0.42",
     "gsap": "^3.12.5"
   }
 }

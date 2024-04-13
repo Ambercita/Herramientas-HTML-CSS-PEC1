@@ -1,9 +1,13 @@
 @import 'variables';
 
+html {
+  overflow-x: hidden;
+}
 
 body {
   background: url(../img/background.jpg) no-repeat center center fixed;
-  animation: fluid 15s linear infinite;
+  animation: fluid 30s linear infinite;
+  margin: 0;
 }
 
 @keyframes fluid {
@@ -21,9 +25,15 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  overflow: hidden;
+  width: 100vw;
 
   > * {
     flex: 1;
+  }
+
+  > a {
+    text-decoration: none;
   }
 
   h1 {
@@ -83,6 +93,7 @@ nav {
   font-family: $font-menu;
   display: flex;
   justify-content: flex-start;
+  padding-left: .2rem;
 
   ul {
     display: flex;
@@ -95,7 +106,7 @@ nav {
       a {
         text-decoration: none;
         color: $amethyst;
-        -webkit-text-stroke: 0.2px white;
+        -webkit-text-stroke: .2px white;
         font-size: 1.5rem;
         font-weight: bolder;
         text-transform: uppercase;
@@ -110,6 +121,7 @@ nav {
 
 main {
   padding-top: 5rem;
+
   img {
     width: 90vw;
     height: auto;
@@ -123,7 +135,7 @@ main {
     color: $maize;
     border: 1px solid $amethyst;
     border-radius: 1rem 4rem 3rem 5rem;
-    padding: 0.5rem 1rem;
+    padding: .5rem 1rem;
     background-color: #00bbf9ff;
     font-size: 1.5rem;
     font-weight: bolder;
@@ -149,7 +161,7 @@ blockquote {
   font-family: $font-text;
   font-size: 1.5rem;
   color: $brilliant-rose;
-  -webkit-text-stroke: 0.5px gray;
+  -webkit-text-stroke: .5px gray;
   text-align: center;
   margin: 1.5rem auto;
   padding: 1rem;
@@ -158,7 +170,7 @@ blockquote {
   &::before {
     content: "";
     background: url(../img/rrrainbow.svg);
-    opacity: 0.5;
+    opacity: .5;
     top: 0;
     left: 0;
     bottom: 0;
@@ -168,4 +180,21 @@ blockquote {
   }
 }
 
+footer {
+  background: url(../img/wave.svg) repeat-x bottom;
+  height: 250px;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-top: -6rem;
+  align-items: flex-start;
+  padding-bottom: .5rem;
 
+  p {
+    font-family: $font-text;
+    color: white;
+    padding: .2rem;
+    margin: .2rem;
+  }
+}

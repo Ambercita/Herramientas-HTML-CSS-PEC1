@@ -18,42 +18,20 @@
     <script type="module" src="app.js"></script>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="categoria.html">Categorías</a></li>
-          <li><a href="presentacion.html">Presentación</a></li>
-          <li><a href="enlaces.html">Enlaces</a></li>
-        </ul>
-      </nav>
-      <a href="portada.html"></a><h1>Glass Animals</h1></a>
-      <div>
-        <img src="./img/happy-smile.gif" alt="un sol con sonrisa" />
-        <img
-          class="bird"
-          src="./img/bird-flying.gif"
-          style="left: -10vw; top: 0px"
-          alt="un pajaro volando"
-        />
-        <img
-          class="bird"
-          src="./img/bird-flying.gif"
-          style="left: -20vw; top: 100px"
-          alt="un pajaro volando"
-        />
-        <img
-          class="bird"
-          src="./img/bird-flying.gif"
-          style="left: 0vw; top: 50px"
-          alt="un pajaro volando"
-        />
-      </div>
-    </header>
+    <include src="src/header.html"></include>
     <main>
       <img
         src="./img/heat-waves.gif"
         alt="Glass Animals Video de letras en gif"
       />
+      <p>
+        Glass Animals es una banda inglesa de indie rock originaria de Oxford.
+        Su música ha sido aclamada por la crítica y su canción “Heat Waves” se
+        convirtió en un éxito internacional. demás, superó los mil millones de
+        reproducciones en Spotify y llegó al número uno en el Billboard Hot 100
+        de Estados Unidos y al número cinco en la lista de sencillos del Reino
+        Unido.
+      </p>
       <!-- Use later in the cancion story
       <blockquote>
         <p lang="en">pulling down backstreets deep in your head</p>
@@ -69,5 +47,6 @@
         -->
       <p><a href="categoria.html">Conoce más</a></p>
     </main>
+   <include src="src/footer.html"></include>
   </body>
 </html>

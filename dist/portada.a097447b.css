@@ -86,6 +86,69 @@ nav ul li a:hover {
   -webkit-text-stroke: .2px #9b5de5;
 }
 
+article:before {
+  content: "";
+  opacity: .5;
+  z-index: -1;
+  background: url("rrrainbow.e4517e43.svg");
+  position: absolute;
+  inset: 0;
+}
+
+article h2 {
+  color: #fee440;
+  text-shadow: .1rem .1rem .1rem #9b5de5;
+  width: 50vw;
+  margin: 0 auto 1rem;
+  font-family: Tilt Neon, sans-serif;
+  font-size: 2.5rem;
+}
+
+article p {
+  text-align: justify;
+  padding: 1.25rem;
+}
+
+article .img-article {
+  object-fit: cover;
+  border-radius: 4rem;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
+}
+
+article figcaption {
+  color: #9b5de5;
+  margin-left: .2rem;
+  font-family: Tilt Neon, sans-serif;
+  font-size: 1rem;
+}
+
+article p:last-of-type {
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+article ul {
+  color: #00bbf9;
+  text-align: center;
+  font-family: Tilt Neon, sans-serif;
+  font-size: 1.2rem;
+  list-style: none;
+}
+
+blockquote {
+  color: #f15bb5;
+  -webkit-text-stroke: .5px gray;
+  text-align: center;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  font-family: Tilt Neon, sans-serif;
+  font-size: 1.5rem;
+  position: relative;
+}
+
 .categoria {
   box-sizing: border-box;
   flex-direction: column;
@@ -300,25 +363,5 @@ main a:hover {
 
 main a.active {
   color: #f15bb5;
-}
-
-blockquote {
-  color: #f15bb5;
-  -webkit-text-stroke: .5px gray;
-  text-align: center;
-  margin: 1.5rem auto;
-  padding: 1rem;
-  font-family: Tilt Neon, sans-serif;
-  font-size: 1.5rem;
-  position: relative;
-}
-
-blockquote:before {
-  content: "";
-  opacity: .5;
-  z-index: -1;
-  background: url("rrrainbow.e4517e43.svg");
-  position: absolute;
-  inset: 0;
 }
 /*# sourceMappingURL=portada.a097447b.css.map */

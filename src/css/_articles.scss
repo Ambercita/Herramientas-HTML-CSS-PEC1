@@ -1,0 +1,68 @@
+article {
+
+    &::before {
+        content: "";
+        background: url(../img/rrrainbow.svg);
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+      }
+
+    h2 {
+        font-size: 2.5rem;
+        font-family: $font-text;
+        width: 50vw;
+        margin: 0 auto 1rem auto;
+        color: $maize;
+        text-shadow: 0.1rem 0.1rem 0.1rem $amethyst;
+    }
+
+    p {
+        padding: 1.25rem;
+        text-align: justify;
+    }
+
+    .img-article {
+        margin-bottom: 0;
+        width: 100%;
+        height: auto;
+        object-fit: cover; 
+        border-radius: 4rem;
+    }
+
+    figcaption {
+        font-size: 1rem;
+        font-family: $font-text;
+        color: $amethyst;
+        margin-left: .2rem;
+    }
+  
+    p:last-of-type {
+        text-align: center;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    ul {
+        font-size: 1.2rem;
+        font-family: $font-text;
+        color: $deep-sky-blue;
+        text-align: center;
+        list-style: none;
+    }
+}
+
+blockquote {
+    font-family: $font-text;
+    font-size: 1.5rem;
+    color: $brilliant-rose;
+    -webkit-text-stroke: 0.5px gray;
+    text-align: center;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    position: relative;
+  }

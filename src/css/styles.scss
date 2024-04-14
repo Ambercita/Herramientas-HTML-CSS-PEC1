@@ -1,5 +1,6 @@
 @import "variables";
 @import "header";
+@import "articles";
 @import "slides";
 @import "footer";
 
@@ -70,25 +71,3 @@ main {
   }
 }
 
-blockquote {
-  font-family: $font-text;
-  font-size: 1.5rem;
-  color: $brilliant-rose;
-  -webkit-text-stroke: 0.5px gray;
-  text-align: center;
-  margin: 1.5rem auto;
-  padding: 1rem;
-  position: relative;
-
-  &::before {
-    content: "";
-    background: url(../img/rrrainbow.svg);
-    opacity: 0.5;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
-  }
-}

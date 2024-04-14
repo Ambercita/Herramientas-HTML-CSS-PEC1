@@ -95,8 +95,9 @@ nav ul li a:hover {
 
 h2 {
   color: #f15bb5;
-  width: 50vw;
+  width: 60vw;
   margin: auto;
+  padding-bottom: 2rem;
   font-family: Lilita One, sans-serif;
   font-size: 3rem;
   font-weight: bold;
@@ -106,6 +107,7 @@ h2 {
   z-index: 1;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 5rem;
   display: flex;
   position: relative;
 }
@@ -134,30 +136,83 @@ h2 {
   background-position: center;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   display: flex;
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.slides article figure figcaption {
+.slides figcaption {
   text-align: center;
   box-sizing: border-box;
   text-transform: uppercase;
-  color: #00f5d4;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  max-width: 40rem;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 80%;
   margin: 0 auto;
   padding: 3rem;
   font-family: Lilita One, sans-serif;
-  font-size: 4.6rem;
-  font-weight: 500;
+  font-size: 5rem;
+  font-weight: 400;
   display: flex;
   position: relative;
   overflow: hidden;
+}
+
+.slides figcaption > * {
+  text-shadow: 2px 2px 2px #000;
+  margin: 0;
+}
+
+.slides :first-child figcaption h3 {
+  color: #00f5d4;
+  -webkit-text-stroke: .5px #fee440;
+}
+
+.slides :nth-child(2) figcaption h3 {
+  color: #fee440;
+  -webkit-text-stroke: .5px #9b5de5;
+}
+
+.slides :nth-child(3) figcaption h3 {
+  color: #00bbf9;
+  -webkit-text-stroke: .5px #f15bb5;
+}
+
+.slides :first-child figcaption a {
+  color: #00f5d4;
+  background-color: #fee440;
+  border: 1px solid #00f5d4;
+}
+
+.slides :first-child figcaption a:hover, .slides :first-child figcaption a.active {
+  color: #fee440;
+  background-color: #00f5d4;
+}
+
+.slides :nth-child(2) figcaption a {
+  color: #fee440;
+  background-color: #f15bb5;
+  border: 1px solid #00f5d4;
+}
+
+.slides :nth-child(2) figcaption a:hover, .slides :nth-child(2) figcaption a.active {
+  color: #f15bb5;
+  background-color: #fee440;
+}
+
+.slides :nth-child(3) figcaption a {
+  color: #00bbf9;
+  background-color: #f15bb5;
+  border: 1px solid #00f5d4;
+}
+
+.slides :nth-child(3) figcaption a:hover, .slides :nth-child(3) figcaption a.active {
+  color: #f15bb5;
+  background-color: #00bbf9;
 }
 
 footer {
@@ -186,6 +241,10 @@ body {
   background: url("background.3289ddc3.jpg") center no-repeat fixed;
   margin: 0;
   animation: 30s linear infinite fluid;
+}
+
+body .active {
+  color: #f15bb5;
 }
 
 @keyframes fluid {
@@ -241,8 +300,6 @@ main a:hover {
 
 main a.active {
   color: #f15bb5;
-  -webkit-text-decoration: none;
-  text-decoration: none;
 }
 
 blockquote {

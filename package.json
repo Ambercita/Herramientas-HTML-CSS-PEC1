@@ -14,15 +14,15 @@
   "author": "",
   "license": "ISC",
   "description": "",
+  "dependencies": {
+    "@studio-freight/lenis": "^1.0.42",
+    "gsap": "^3.12.5"
+  },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.12.0",
     "npm-run-all": "^4.1.5",
     "parcel": "^2.12.0",
     "posthtml-include": "^2.0.1",
     "rimraf": "^5.0.5"
-  },
-  "dependencies": {
-    "@studio-freight/lenis": "^1.0.42",
-    "gsap": "^3.12.5"
   }
 }

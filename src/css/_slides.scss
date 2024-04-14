@@ -6,10 +6,11 @@
 }
 
 h2 {
-  width: 50vw;
+  width: 60vw;
   margin: auto;
   font-size: 3rem;
   font-weight: bold;
+  padding-bottom: 2rem;
   color: $brilliant-rose;
   font-family: $font-display;
 }
@@ -20,6 +21,7 @@ h2 {
   width: 100%;
   position: relative;
   z-index: 1;
+  margin-bottom: 5rem;
 
   article {
     display: flex;
@@ -44,31 +46,95 @@ h2 {
         position: absolute;
         left: 0;
         top: 0;
-        width: 100vw;
+        width: 100%;
         background-position: center;
         object-fit: cover;
         will-change: transform;
       }
+    }
+  }
 
-      figcaption {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-        text-align: center;
-        padding: 3rem;
-        margin: 0 auto;
-        box-sizing: border-box;
-        max-width: 40rem;
-        position: relative;
-        align-items: center;
-        text-transform: uppercase;
-        font-size: 4.6rem;
-        font-weight: 500;
-        font-family: $font-display;
-        color: $aquamarine;
-      }
+  figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    padding: 3rem;
+    margin: 0 auto;
+    gap: 1rem;
+    box-sizing: border-box;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 400;
+    width: 80%;
+    font-family: $font-display;
+    > * {
+      margin: 0;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+    }
+  }
+
+  :nth-child(1) figcaption h3 {
+    color: $aquamarine;
+    -webkit-text-stroke: 0.5px $maize;
+  }
+
+  :nth-child(2) figcaption h3 {
+    color: $maize;
+    -webkit-text-stroke: 0.5px $amethyst;
+  }
+
+  :nth-child(3) figcaption h3 {
+    color: $deep-sky-blue;
+    -webkit-text-stroke: 0.5px $brilliant-rose;
+  }
+
+  :nth-child(1) figcaption a {
+    color: $aquamarine;
+    background-color: $maize;
+    border: 1px solid $aquamarine;
+    &:hover {
+      color: $maize;
+      background-color: $aquamarine;
+    }
+
+    &.active {
+      color: $maize;
+      background-color: $aquamarine;
+    }
+  }
+
+  :nth-child(2) figcaption a {
+    color: $maize;
+    background-color: $brilliant-rose;
+    border: 1px solid $aquamarine;
+    &:hover {
+      color: $brilliant-rose;
+      background-color: $maize;
+    }
+
+    &.active {
+        color: $brilliant-rose;
+        background-color: $maize;
+    }
+  }
+
+  :nth-child(3) figcaption a {
+    color: $deep-sky-blue;
+    background-color: $brilliant-rose;
+    border: 1px solid $aquamarine;
+    &:hover {
+        color: $brilliant-rose;
+        background-color: $deep-sky-blue;
+    }
+
+    &.active {
+      color: $brilliant-rose;
+      background-color: $deep-sky-blue;
     }
   }
 }
+

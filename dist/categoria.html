@@ -9,15 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Lilita+One&family=Tilt+Neon&display=swap" rel="stylesheet">
-    <script src="/portada.0641b553.js" defer=""></script>
+    <script src="/categoria.a7b0cf7f.js" defer=""></script>
   </head>
   <body>
     <header>
     <nav>
       <ul>
-        <li><a href="/categoria.html">Categorías</a></li>
-        <li><a href="/presentacion.html">Presentación</a></li>
-        <li><a href="/enlaces.html">Enlaces</a></li>
+        <li><a href="/categoria.html" id="categoria_nav">Categorías</a></li>
+        <li><a href="/presentacion.html" id="presentacion_nav">Presentación</a></li>
+        <li><a href="/enlaces.html" id="enlaces_nav">Enlaces</a></li>
       </ul>
     </nav>
     <a href="/portada.html"><h1>Glass Animals</h1></a>
@@ -30,25 +30,37 @@
   </header>
     <main class="categoria">
       <section>
-        <h2>Conoce los miembros de la banda, sus discos y las historias detras de las canciones.</h2>
+        <h2>
+          ¿Quieres conocer los miembros de la banda, sus discos y las historias
+          detras de las canciones?
+        </h2>
       </section>
       <section class="slides">
         <article class="slide">
           <figure>
-            <img src="/miembros.07daaf9c.webp">
-            <figcaption><h3>Miembros de banda</h3></figcaption>
+            <img src="/miembros.9dab098a.jpg" alt="miembros de la banda" width="1200" height="1000">
+            <figcaption>
+              <h3>Miembros</h3>
+              <a href="">Conoce</a>
+            </figcaption>
           </figure>
         </article>
         <article class="slide">
           <figure>
-            <img src="/album.02783937.jpg">
-            <figcaption><h3>Discos</h3></figcaption>
+            <img src="/dreamland.655090e8.jpg" alt="una creatividad sobre la canción" width="1080" height="1920">
+            <figcaption>
+              <h3>Historias</h3>
+              <a href="">Descubre</a>
+            </figcaption>
           </figure>
         </article>
         <article class="slide">
           <figure>
-            <img src="/song.4544d3f1.jpg">
-            <figcaption><h3>Historia de canciones</h3></figcaption>
+            <img src="/song.4544d3f1.jpg" alt="una portada de su canción" width="2024" height="2039">
+            <figcaption>
+              <h3>Discos</h3>
+              <a href="">Explora</a>
+            </figcaption>
           </figure>
         </article>
       </section>
@@ -61,4 +73,7 @@
     <p>2024 &copy; Jia Wang</p>
   </footer>
   </body>
+  <script>document.getElementById("categoria_nav").classList.add("active");
+
+</script>
 </html>

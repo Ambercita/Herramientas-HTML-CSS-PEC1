@@ -15,35 +15,65 @@
       href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Lilita+One&family=Tilt+Neon&display=swap"
       rel="stylesheet"
     />
-    <script type="module" src="app.js"></script>
+    <script type="module" src="category_scroll.js"></script>
   </head>
   <body>
     <include src="src/header.html"></include>
     <main class="categoria">
       <section>
-        <h2>Conoce los miembros de la banda, sus discos y las historias detras de las canciones.</h2>
+        <h2>
+          ¿Quieres conocer los miembros de la banda, sus discos y las historias
+          detras de las canciones?
+        </h2>
       </section>
       <section class="slides">
         <article class="slide">
           <figure>
-            <img src="./img/miembros.webp">
-            <figcaption><h3>Miembros de banda</h3></figcaption>
+            <img
+              src="./img/miembros.jpg"
+              alt="miembros de la banda"
+              width="1200"
+              height="1000"
+            />
+            <figcaption>
+              <h3>Miembros</h3>
+              <a href="">Conoce</a>
+            </figcaption>
           </figure>
         </article>
         <article class="slide">
           <figure>
-            <img src="./img/album.jpg">
-            <figcaption><h3>Discos</h3></figcaption>
+            <img
+              src="./img/dreamland.jpg"
+              alt="una creatividad sobre la canción"
+              width="1080"
+              height="1920"
+            />
+            <figcaption>
+              <h3>Historias</h3>
+              <a href="">Descubre</a>
+            </figcaption>
           </figure>
         </article>
         <article class="slide">
           <figure>
-            <img src="./img/song.jpg">
-            <figcaption><h3>Historia de canciones</h3></figcaption>
+            <img
+              src="./img/song.jpg"
+              alt="una portada de su canción"
+              width="2024"
+              height="2039"
+            />
+            <figcaption>
+              <h3>Discos</h3>
+              <a href="">Explora</a>
+            </figcaption>
           </figure>
         </article>
       </section>
     </main>
     <include src="src/footer.html"></include>
   </body>
+  <script>
+    document.getElementById("categoria_nav").classList.add("active");
+  </script>
 </html>

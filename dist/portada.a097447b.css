@@ -126,7 +126,7 @@ article figcaption {
 
 article p:last-of-type {
   text-align: center;
-  margin-bottom: 0;
+  margin-bottom: 3rem;
   padding-bottom: 0;
 }
 
@@ -147,6 +147,11 @@ blockquote {
   font-family: Tilt Neon, sans-serif;
   font-size: 1.5rem;
   position: relative;
+}
+
+.container {
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
 }
 
 .categoria {

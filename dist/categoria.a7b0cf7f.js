@@ -624,7 +624,7 @@ slides.forEach((slide, i)=>{
     }, 0);
 });
 
-},{"@studio-freight/lenis":"ggVJc","gsap":"fPSuC","gsap/ScrollTrigger":"7wnFk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ggVJc":[function(require,module,exports) {
+},{"@studio-freight/lenis":"9RNJp","gsap":"k3DGt","gsap/ScrollTrigger":"4ZAPQ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9RNJp":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>Lenis);
@@ -998,7 +998,7 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"fPSuC":[function(require,module,exports) {
+},{}],"k3DGt":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "gsap", ()=>gsapWithCSS);
@@ -1031,7 +1031,7 @@ var _csspluginJs = require("./CSSPlugin.js");
 var gsapWithCSS = (0, _gsapCoreJs.gsap).registerPlugin((0, _csspluginJs.CSSPlugin)) || (0, _gsapCoreJs.gsap), // to protect from tree shaking
 TweenMaxWithCSS = gsapWithCSS.core.Tween;
 
-},{"./gsap-core.js":"05eeC","./CSSPlugin.js":"l02JQ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"05eeC":[function(require,module,exports) {
+},{"./gsap-core.js":"8oVOV","./CSSPlugin.js":"9c6bm","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8oVOV":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "GSCache", ()=>GSCache);
@@ -4055,7 +4055,7 @@ _coreReady = 1;
 _windowExists() && _wake();
 var Power0 = _easeMap.Power0, Power1 = _easeMap.Power1, Power2 = _easeMap.Power2, Power3 = _easeMap.Power3, Power4 = _easeMap.Power4, Linear = _easeMap.Linear, Quad = _easeMap.Quad, Cubic = _easeMap.Cubic, Quart = _easeMap.Quart, Quint = _easeMap.Quint, Strong = _easeMap.Strong, Elastic = _easeMap.Elastic, Back = _easeMap.Back, SteppedEase = _easeMap.SteppedEase, Bounce = _easeMap.Bounce, Sine = _easeMap.Sine, Expo = _easeMap.Expo, Circ = _easeMap.Circ;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"l02JQ":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9c6bm":[function(require,module,exports) {
 /*!
  * CSSPlugin 3.12.5
  * https://gsap.com
@@ -5022,7 +5022,7 @@ var CSSPlugin = {
 });
 (0, _gsapCoreJs.gsap).registerPlugin(CSSPlugin);
 
-},{"./gsap-core.js":"05eeC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7wnFk":[function(require,module,exports) {
+},{"./gsap-core.js":"8oVOV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4ZAPQ":[function(require,module,exports) {
 /*!
  * ScrollTrigger 3.12.5
  * https://gsap.com
@@ -6789,7 +6789,7 @@ ScrollTrigger.core = {
 };
 _getGSAP() && gsap.registerPlugin(ScrollTrigger);
 
-},{"./Observer.js":"aAWxM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aAWxM":[function(require,module,exports) {
+},{"./Observer.js":"fJwe9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fJwe9":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Observer", ()=>Observer);

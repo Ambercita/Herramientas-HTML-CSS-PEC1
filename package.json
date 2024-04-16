@@ -15,6 +15,8 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "@splidejs/splide-extension-video": "^0.8.0",
     "@studio-freight/lenis": "^1.0.42",
     "gsap": "^3.12.5"
   },

@@ -41,14 +41,31 @@ article {
         margin-left: .2rem;
     }
   
-    p:last-of-type {
+    .end {
         text-align: center;
-        margin-bottom: 3rem;
+        margin: 2rem auto;
         padding-bottom: 0;
     }
 
+    .anchor {
+        border: none;
+        background-color: transparent;
+        display: inline;
+        padding: 0;
+        margin: 0;
+        font-family: $font-text;
+        text-decoration: underline;
+        text-decoration-color: $maize;
+        color: $amethyst;
+        text-transform: lowercase;
+
+        &:hover {
+            color: $maize;
+        }
+    }
+
     ul {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         font-family: $font-text;
         color: $deep-sky-blue;
         text-align: center;
@@ -56,18 +73,9 @@ article {
     }
 }
 
-blockquote {
-    font-family: $font-text;
-    font-size: 1.5rem;
-    color: $brilliant-rose;
-    -webkit-text-stroke: 0.5px gray;
-    text-align: center;
-    margin: 1.5rem auto;
-    padding: 1rem;
-    position: relative;
-  }
-
   .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+
+

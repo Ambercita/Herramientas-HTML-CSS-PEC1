@@ -1,6 +1,7 @@
 import Lenis from "@studio-freight/lenis";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 gsap.registerPlugin(ScrollTrigger);
 
 /* SCROLL FLUIDO */
@@ -17,6 +18,7 @@ function raf(time) {
 
 requestAnimationFrame(raf);
 
+/* SCROLL CATEGORIA VERTICAL */
 let slides = gsap.utils.toArray(".slide"),
   getRatio = (el) =>
     window.innerHeight / (window.innerHeight + el.offsetHeight);

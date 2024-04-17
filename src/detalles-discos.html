@@ -15,6 +15,10 @@
       href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Lilita+One&family=Tilt+Neon&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../node_modules/@splidejs/splide-extension-video/dist/css/splide-extension-video.min.css">
+    <link rel="stylesheet" href="../node_modules/@splidejs/splide/dist/css/splide.min.css">
+   
+    <script type="module" src="disk_carousel.js"></script>
   </head>
   <body>
     <include src="src/header.html"></include>
@@ -26,113 +30,47 @@
           musical a lo largo de su trayectoria. Cada disco posee su propio
           estilo. 
         <p> A continuación, se presentan las canciones de cuidadosa
-          selección por la autora en sus discos más destacados.</p> 
-        </p>
+          selección por la autora en su disco más destacado llamado <lang="en">"How to be a human being"</lang>. Fue lanzado en 2016. Este álbum se inspiró en las historias de que Dave Bayley recogió de personas que conoció mientras estaba de gira. </p>
         <ul>
-          <li>Creatures in Heaven</li>
-          <li>Heat Waves</li>
-          <li>Dreamland</li>
-          <li>Tangerine</li>
+          <li>Life Itself</li>
+          <li>Season 2 Episode 3</li>
+          <li>Mama's Gun</li>
           <li>Youth</li>
-          <li>Life itself</li>
+          <li>Popular St</li>
+          <li>Cane Shuga</li>
         </ul>
-        <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide">
           <div class="splide__track">
             <ul class="splide__list">
-              <li class="splide__slide">Slide 01</li>
-              <li class="splide__slide">Slide 02</li>
-              <li class="splide__slide">Slide 03</li>
+              <li class="splide__slide" data-splide-youtube="https://www.youtube.com/watch?v=yd9p4n5hLEg">
+                <img width="1200" height="1200" src="./img/album6.jpg" alt="portada disco mom" />
+              </li>
+              <li class="splide__slide" data-splide-youtube="https://www.youtube.com/watch?v=x2Kwos_oWSc">
+                <img width="1200" height="1200" src="./img/album5.jpg" alt="portada disco chica" />
+              </li>
+              <li class="splide__slide" data-splide-youtube="https://www.youtube.com/watch?v=X3ji3S21vak">
+                <img width="1200" height="1200" src="./img/album3.jpg" alt="portada disco familia" />
+              </li>
+              <li class="splide__slide" data-splide-youtube="https://www.youtube.com/watch?v=_ZdsmLgCVdU">
+                <img width="1200" height="1200" src="./img/album4.jpg" alt="portada disco familia" />
+              </li>
+              <li class="splide__slide" data-splide-youtube="https://www.youtube.com/watch?v=9QBiwyJgATs">
+                <img width="1200" height="1200" src="./img/album1.jpg" alt="portada disco hombre" />
+              </li>
+              <li class="splide__slide" data-splide-youtube="https://www.youtube.com/watch?v=ofS3GtNRFGY">
+                <img width="1200" height="1200" src="./img/album2.jpg" alt="portada disco familia" />
+              </li>
             </ul>
           </div>
-        </section>
-        <!--
-        <div class="container">
-        <figure>
-          <iframe
-            width="373"
-            height="210"
-            src="https://www.youtube.com/embed/RqHbD1i4NF4?si=RHpcOB0WorMC1pgv"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-          <figcaption>Creatures in Heaven</figcaption>
-        </figure>
-        <figure>
-          <iframe
-          width="373"
-            height="210"
-            src="https://www.youtube.com/embed/mRD0-GxqHVo?si=8S95GA6s5GcU55d9"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-          <figcaption>Heat Waves</figcaption>
-        </figure>
-        <figure>
-          <iframe
-          width="373"
-            height="210"
-            src="https://www.youtube.com/embed/BE7vBk_zLA4?si=ihHf713d630D0Pto"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-          <figcaption>Dreamland</figcaption>
-        </figure>
-        <figure>
-          <iframe
-          width="373"
-            height="210"
-            src="https://www.youtube.com/embed/cIIoGU5EmhU?si=KS076fI5CDoh9r2c"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-          <figcaption>Tangerine</figcaption>
-        </figure>
-        <figure>
-          <iframe
-          width="373"
-            height="210"
-            src="https://www.youtube.com/embed/_ZdsmLgCVdU?si=UOY4nctOxmiPpydV"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-          <figcaption>Youth</figcaption>
-        </figure>
-        <figure>
-          <iframe
-          width="373"
-          height="210"
-            src="https://www.youtube.com/embed/yd9p4n5hLEg?si=jfA0dwuTY64xJGtf"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-          <figcaption>Life itself</figcaption>
-        </figure>
         </div>
-        -->
-        <p>
+        <p class="end">
           ¡Espero que hayas disfrutado su música! Si quieres conocer cómo se les inspiraron estas creatividades, te invito a visitar la página de
-          "Historias de Canciones", donde podrás descubrir las historias tras algunas de las canciones.
+          <a class="anchor" href="detalles-historias.html">Historias de Canciones</a>, donde podrás descubrir las historias tras algunas de las canciones.
         </p>
       </article>
     </main>
+    <script src="../node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+    <script src="../node_modules/@splidejs/splide-extension-video/dist/js/splide-extension-video.min.js"></script>
     <include src="src/footer.html"></include>
   </body>
 </html>

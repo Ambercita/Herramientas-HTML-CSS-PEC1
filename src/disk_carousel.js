@@ -3,7 +3,7 @@ import "@splidejs/splide-extension-video/dist/css/splide-extension-video.min.css
 
 /* VIDEO CARRUSEL EN DISCOS */
 document.addEventListener("DOMContentLoaded", function () {
-  new Splide(".splide", {
+  var splide = new Splide(".splide", {
     heightRatio: 0.5,
     width: "100vw",
     margin: 0,
@@ -22,5 +22,15 @@ document.addEventListener("DOMContentLoaded", function () {
         heightRatio: 0.8,
       },
     },
-  }).mount(window.splide.Extensions);
+  }).mount(window.splide.Extensions)
+
+  splide.on("video:play", function (slide) {
+    const slideLabel = slide.slide.querySelector("span");
+    slideLabel.style.display = "none";
+  });
+
+  splide.on("video:pause", function (slide) {
+    const slideLabel = slide.slide.querySelector("span");
+    slideLabel.style.display = "block";
+  });
 });

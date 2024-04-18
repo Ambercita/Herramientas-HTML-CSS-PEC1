@@ -64,7 +64,7 @@ article {
     padding-bottom: 0;
   }
 
-  .anchor {
+  p a.anchor {
     border: none;
     background-color: transparent;
     display: inline;
@@ -77,7 +77,7 @@ article {
     text-transform: lowercase;
 
     &:hover {
-      color: $maize;
+      color: $deep-sky-blue;
     }
   }
 

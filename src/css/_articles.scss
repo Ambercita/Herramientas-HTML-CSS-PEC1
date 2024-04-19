@@ -34,7 +34,7 @@ article {
     font-family: $font-text;
     width: 50vw;
     margin: 0 auto 1rem auto;
-    color: $maize;
+    color: $deep-sky-blue;
     text-shadow: 0.1rem 0.1rem 0.1rem $amethyst;
   }
 
@@ -84,7 +84,8 @@ article {
   ul {
     font-size: 1.3rem;
     font-family: $font-text;
-    color: $deep-sky-blue;
+    color: $amethyst;
+    text-shadow: 0.1rem 0.1rem 0.1rem $deep-sky-blue;
     text-align: center;
     list-style: none;
 
@@ -161,9 +162,10 @@ article {
     margin: 2rem 5rem;
 
     p {
+      text-shadow: none;
       color: $amethyst;
       font-size: 1.25rem;
-      padding: 2rem 5rem;
+      padding: 2rem;
     }
   }
 

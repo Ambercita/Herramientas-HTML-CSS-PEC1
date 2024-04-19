@@ -35,7 +35,9 @@ main {
     font-family: $font-text;
     margin: -2rem 2rem 1.25rem 3rem;
     font-size: 1.5rem;
+    text-align: justify;
     color: $brilliant-rose;
+    text-shadow: 0.05rem 0.05rem 0.05rem $amethyst;
   }
 
   img {

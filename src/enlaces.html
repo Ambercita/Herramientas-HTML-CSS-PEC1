@@ -19,15 +19,23 @@
   <body>
     <include src="src/header.html"></include>
     <main>
-     <article>
+     <section class="enlaces">
         <h2>Enlaces de los fuentes de los contenidos</h2>
-        <p>Este sitio web ha sido desarrollado como parte del proyecto universitario de la asignatura Herramientas de HTML y CSS. El contenido que se presenta en el mismo tiene fines exclusivamente educativos.</p>
-        <p>A continuación, se presenta dónde se encuentran los fuentes de los contenidos de esta web:</p>
-     </article>
+        <p>Este sitio web ha sido desarrollado como parte del proyecto universitario de la asignatura Herramientas de HTML y CSS. El contenido que se presenta en el mismo tiene fines exclusivamente educativos. A continuación, se presenta dónde se encuentran los fuentes de los contenidos de esta web:</p>
+        <ol>
+          <li>
+            <a class="anchor" href="https://www.youtube.com/watch?v=KT7F15T9VBI">Vídeo musical de letras Heat Waves</a>
+            <p>Vídeo clip cortado en formato gif en la página de inicio</p>
+          </li>
+          <li>
+            <a class="anchor" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftenor.com%2Fsearch%2Fsun-gifs&psig=AOvVaw1tpCoWkWDgi8GzW_ZY0An5&ust=1713700852978000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLiHja3f0IUDFQAAAAAdAAAAABAJ">Gif de sol de estilo pixel</a>
+            <p>Está situado en la página superior derecha</p>
+        </ol>
+     <section>
     </main>
     <include src="src/footer.html"></include>
+    <script>
+      document.getElementById("enlaces_nav").classList.add("active");
+    </script>
   </body>
-  <script>
-    document.getElementById("enlaces_nav").classList.add("active");
-  </script>
 </html>

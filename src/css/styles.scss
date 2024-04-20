@@ -74,3 +74,31 @@ main {
   }
 }
 
+.enlaces {
+  .anchor {
+    @include anchor;
+    display: block;
+    width: 100vw;
+  }
+
+  h2 {
+    @include h2;
+  }
+}
+
+ol {
+  margin-left: 3rem;
+
+  li {
+    margin-bottom: 1rem;
+    &::marker {
+      color: $brilliant-rose;
+      font-size: 1.5rem;
+  }
+  }
+  
+  p {
+    display: inline;
+    margin-left:0;
+  }
+}

@@ -2,7 +2,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    overflow: hidden;
+    overflow-x: hidden;
     width: 100vw;
   
     > * {

@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background: url(../img/background.jpeg) no-repeat center center fixed;
+  background: url(../img/background.jpeg) repeat-y center center fixed;
   animation: fluid 30s linear infinite;
   margin: 0;
 
@@ -115,6 +115,10 @@ main {
   }
 }
 
+.youth {
+  width: 560px;
+}
+
 ol {
   margin-left: 3rem;
   margin-right: 3rem;
@@ -168,7 +172,22 @@ ol {
     .enlaces h2 {
       font-size: 1.5rem;
     }
+
+    article {
+      blockquote p {
+      font-size: 1rem;
+      padding: 0;
+    }
+
+    .youth {
+      width: 100vw;
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
+}
 
   .slides figcaption {
     width: 100%;

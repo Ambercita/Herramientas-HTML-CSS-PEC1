@@ -96,9 +96,31 @@ ol {
       font-size: 1.5rem;
   }
   }
-  
+
   p {
     display: inline;
     margin-left:0;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    p {
+      font-size: 2rem;
+      margin: -2rem 2rem 1.25rem 3rem;
+    }
+
+    img {
+      width: 50vw;
+      height: auto;
+      display: block;
+      margin: 2rem auto 3rem auto;
+    }
+
+    a {
+      font-size: 2rem;
+      margin: 2rem auto;
+      width: 15rem;
+    }
   }
 }

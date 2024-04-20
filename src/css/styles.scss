@@ -142,6 +142,7 @@ ol {
     .enlaces > p {
       padding: 1.25rem;
     }
+    
   }
 
   .slides figcaption {
@@ -153,6 +154,10 @@ ol {
   .slides article figure img {
     height: 100%;
     object-fit: none;
+  }
+
+  a.anchor { 
+    font-size: 1rem;
   }
 }
 

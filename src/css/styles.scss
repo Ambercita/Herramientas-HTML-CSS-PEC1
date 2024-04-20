@@ -62,6 +62,7 @@ main {
     justify-content: center;
     align-items: center;
     width: 10rem;
+    
     &:hover {
       color: $aquamarine;
       background-color: $amethyst;
@@ -71,17 +72,42 @@ main {
       color: $brilliant-rose;
     }
   }
+
+  a.cta-portada  {
+    background-image: linear-gradient(90deg, $brilliant-rose, $amethyst, $aquamarine);
+    background-size: 200% 200%;
+    background-position: 100% 0;
+    transition: background-position 500ms, color 500ms, text-shadow 500ms, box-shadow 500ms;
+    color: $maize;
+
+    &:hover {
+      background-position: 0 100%;
+      color: $aquamarine;
+      box-shadow: 0.1rem 0.1rem 0.1rem 0 $amethyst,
+                  0.2rem 0.2rem 0.2rem 0 $aquamarine,
+                  0.3rem 0.3rem 0.3rem 0 $brilliant-rose,
+                  0.4rem 0.4rem 0.4rem 0 $amethyst;
+      text-shadow: 0.1rem 0.1rem 0.1rem 0 $amethyst,
+                    0.2rem 0.2rem 0.2rem 0 $aquamarine,
+                    0.3rem 0.3rem 0.3rem 0 $brilliant-rose,
+                    0.4rem 0.4rem 0.4rem 0 $amethyst;
+    }
+  }
 }
 
 .enlaces {
   .anchor {
     @include anchor;
     display: block;
-    width: 100%;
+    width: fit-content;
   }
 
   h2 {
     @include h2;
+  }
+
+  > p {
+    padding: 1.25rem;
   }
 }
 
@@ -138,11 +164,6 @@ ol {
     .enlaces h2 {
       font-size: 1.5rem;
     }
-
-    .enlaces > p {
-      padding: 1.25rem;
-    }
-    
   }
 
   .slides figcaption {

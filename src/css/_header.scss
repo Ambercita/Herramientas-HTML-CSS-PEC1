@@ -1,97 +1,97 @@
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    overflow-x: hidden;
-    width: 100vw;
-  
-    > * {
-      flex: 1;
-    }
-  
-    > a {
-      text-decoration: none;
-    }
-  
-    h1 {
-      padding-top: 1rem;
-      font-family: $font-display;
-      font-size: 3rem;
-      color: $amethyst;
-      -webkit-text-stroke: 0.5px white;
-      text-shadow: calc($header-text-shadow-size * 1)
-          calc($header-text-shadow-size * 1) 0 $deep-sky-blue,
-        calc($header-text-shadow-size * 2) calc($header-text-shadow-size * 2) 0
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow-x: hidden;
+  width: 100vw;
+
+  > * {
+    flex: 1;
+  }
+
+  > a {
+    text-decoration: none;
+  }
+
+  h1 {
+    padding-top: 1rem;
+    font-family: $font-display;
+    font-size: 3rem;
+    color: $amethyst;
+    -webkit-text-stroke: 0.5px white;
+    text-shadow: calc($header-text-shadow-size * 1)
+        calc($header-text-shadow-size * 1) 0 $deep-sky-blue,
+      calc($header-text-shadow-size * 2) calc($header-text-shadow-size * 2) 0
+        $brilliant-rose,
+      calc($header-text-shadow-size * 3) calc($header-text-shadow-size * 3) 0
+        $maize,
+      calc($header-text-shadow-size * 4) calc($header-text-shadow-size * 4) 0
+        $aquamarine;
+    transition: text-shadow 0.5s;
+    text-align: center;
+    margin: 0;
+    &:hover {
+      text-shadow: calc($header-text-shadow-size * 4)
+          calc($header-text-shadow-size * 4) 0 $deep-sky-blue,
+        calc($header-text-shadow-size * 8) calc($header-text-shadow-size * 8) 0
           $brilliant-rose,
-        calc($header-text-shadow-size * 3) calc($header-text-shadow-size * 3) 0
-          $maize,
-        calc($header-text-shadow-size * 4) calc($header-text-shadow-size * 4) 0
-          $aquamarine;
-      transition: text-shadow 0.5s;
-      text-align: center;
-      margin: 0;
-      &:hover {
-        text-shadow: calc($header-text-shadow-size * 4)
-            calc($header-text-shadow-size * 4) 0 $deep-sky-blue,
-          calc($header-text-shadow-size * 8) calc($header-text-shadow-size * 8) 0
-            $brilliant-rose,
-          calc($header-text-shadow-size * 12) calc($header-text-shadow-size * 12)
-            0 $maize,
-          calc($header-text-shadow-size * 16) calc($header-text-shadow-size * 16)
-            0 $aquamarine;
-      }
-    }
-  
-    img {
-      position: absolute;
-      top: 15;
-      right: 30;
-      height: 100px;
-      width: 100px;
+        calc($header-text-shadow-size * 12) calc($header-text-shadow-size * 12)
+          0 $maize,
+        calc($header-text-shadow-size * 16) calc($header-text-shadow-size * 16)
+          0 $aquamarine;
     }
   }
-  
-  .bird {
-    height: 100px;
-    animation: run 10s linear infinite;
+
+  img {
     position: absolute;
+    top: 15;
+    right: 30;
+    height: 100px;
+    width: 100px;
   }
-  
-  @keyframes run {
-    0% {
-      transform: translateX(-20vw);
-    }
-    100% {
-      transform: translateX(120vw);
-    }
+}
+
+.bird {
+  height: 100px;
+  animation: run 10s linear infinite;
+  position: absolute;
+}
+
+@keyframes run {
+  0% {
+    transform: translateX(-20vw);
   }
-  
-  nav {
-    font-family: $font-menu;
+  100% {
+    transform: translateX(120vw);
+  }
+}
+
+nav {
+  font-family: $font-menu;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 0.2rem;
+
+  ul {
     display: flex;
-    justify-content: flex-start;
-    padding-left: 0.2rem;
-  
-    ul {
-      display: flex;
-      flex-direction: column;
-      list-style: none;
-      padding: 0.2rem;
-      li {
-        margin: 0.2rem 0;
-  
-        a {
-          text-decoration: none;
-          color: $amethyst;
-          -webkit-text-stroke: 0.2px white;
-          font-size: 1.5rem;
-          font-weight: bolder;
-          text-transform: uppercase;
-          &:hover {
-            color: $maize;
-            -webkit-text-stroke: 0.2px $amethyst;
-          }
+    flex-direction: column;
+    list-style: none;
+    padding: 0.2rem;
+    li {
+      margin: 0.2rem 0;
+
+      a {
+        text-decoration: none;
+        color: $amethyst;
+        -webkit-text-stroke: 0.2px white;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        text-transform: uppercase;
+        &:hover {
+          color: $maize;
+          -webkit-text-stroke: 0.2px $amethyst;
         }
       }
     }
   }
+}

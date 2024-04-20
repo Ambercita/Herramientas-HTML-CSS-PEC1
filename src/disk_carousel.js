@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         heightRatio: 0.8,
       },
     },
-  }).mount(window.splide.Extensions)
+  }).mount(window.splide.Extensions);
 
   splide.on("video:play", function (slide) {
     const slideLabel = slide.slide.querySelector("span");

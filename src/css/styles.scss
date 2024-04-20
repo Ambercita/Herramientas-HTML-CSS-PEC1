@@ -62,7 +62,7 @@ main {
     justify-content: center;
     align-items: center;
     width: 10rem;
-    
+
     &:hover {
       color: $aquamarine;
       background-color: $amethyst;
@@ -73,24 +73,28 @@ main {
     }
   }
 
-  a.cta-portada  {
-    background-image: linear-gradient(90deg, $brilliant-rose, $amethyst, $aquamarine);
+  a.cta-portada {
+    background-image: linear-gradient(
+      90deg,
+      $brilliant-rose,
+      $amethyst,
+      $aquamarine
+    );
     background-size: 200% 200%;
     background-position: 100% 0;
-    transition: background-position 500ms, color 500ms, text-shadow 500ms, box-shadow 500ms;
+    transition: background-position 500ms, color 500ms, text-shadow 500ms,
+      box-shadow 500ms;
     color: $maize;
 
     &:hover {
       background-position: 0 100%;
       color: $aquamarine;
       box-shadow: 0.1rem 0.1rem 0.1rem 0 $amethyst,
-                  0.2rem 0.2rem 0.2rem 0 $aquamarine,
-                  0.3rem 0.3rem 0.3rem 0 $brilliant-rose,
-                  0.4rem 0.4rem 0.4rem 0 $amethyst;
+        0.2rem 0.2rem 0.2rem 0 $aquamarine,
+        0.3rem 0.3rem 0.3rem 0 $brilliant-rose, 0.4rem 0.4rem 0.4rem 0 $amethyst;
       text-shadow: 0.1rem 0.1rem 0.1rem 0 $amethyst,
-                    0.2rem 0.2rem 0.2rem 0 $aquamarine,
-                    0.3rem 0.3rem 0.3rem 0 $brilliant-rose,
-                    0.4rem 0.4rem 0.4rem 0 $amethyst;
+        0.2rem 0.2rem 0.2rem 0 $aquamarine,
+        0.3rem 0.3rem 0.3rem 0 $brilliant-rose, 0.4rem 0.4rem 0.4rem 0 $amethyst;
     }
   }
 }
@@ -177,7 +181,7 @@ ol {
     object-fit: none;
   }
 
-  a.anchor { 
+  a.anchor {
     font-size: 1rem;
   }
 }

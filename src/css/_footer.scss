@@ -1,18 +1,18 @@
 footer {
-    background: url(../img/wave.svg) repeat-x bottom;
-    height: 250px;
-    background-size: contain;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    margin-top: -6rem;
-    align-items: flex-start;
-    padding-bottom: 0.5rem;
-  
-    p {
-      font-family: $font-text;
-      color: white;
-      padding: 0.2rem;
-      margin: 0.2rem;
-    }
+  background: url(../img/wave.svg) repeat-x bottom;
+  height: 250px;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-top: -6rem;
+  align-items: flex-start;
+  padding-bottom: 0.5rem;
+
+  p {
+    font-family: $font-text;
+    color: white;
+    padding: 0.2rem;
+    margin: 0.2rem;
   }
+}

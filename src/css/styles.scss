@@ -138,6 +138,24 @@ ol {
   }
 }
 
+strong {
+  background: $gradient-right;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+b {
+  color: $maize;
+  text-shadow: 2px 2px 2px $amethyst;
+}
+
+i {
+  color: $aquamarine;
+  text-shadow: 2px 2px 2px $amethyst;
+}
+
+
 @media (max-width: 768px) {
   header {
     img:not(.bird) {

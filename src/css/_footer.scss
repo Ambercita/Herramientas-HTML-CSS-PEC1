@@ -1,7 +1,8 @@
 footer {
-  background: url(../img/wave.svg) repeat-x bottom;
+  background: url(../img/logo.png) no-repeat right 80%,
+    url(../img/wave.svg) repeat-x bottom;
   height: 250px;
-  background-size: contain;
+  background-size: 100px auto, contain;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -15,4 +16,41 @@ footer {
     padding: 0.2rem;
     margin: 0.2rem;
   }
+
+  nav {
+    ul {
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      margin-bottom: 0;
+      li {
+        margin-right: 0.5rem;
+        a {
+          color: $maize;
+          text-transform: capitalize;
+          font-size: 1.2rem;
+          &:hover {
+            color: $aquamarine;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    nav {
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        li {
+          box-sizing: border-box;
+          margin: 0.2rem;
+          max-width: 50%;
+        }
+      }
+    }
+    p {
+      display: none;
+  }
+}
 }

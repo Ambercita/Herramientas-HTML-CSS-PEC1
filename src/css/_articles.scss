@@ -17,6 +17,13 @@ article {
     @include h2;
   }
 
+  picture {
+    img {
+      border-radius: 4rem;
+      width: 70vw;
+    }
+  }
+
   p {
     padding: 1.25rem;
     text-align: justify;

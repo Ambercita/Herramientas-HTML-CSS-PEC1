@@ -53,11 +53,11 @@ header {
 
 .bird {
   height: 100px;
-  animation: run 10s linear infinite;
+  animation: volar 10s linear infinite;
   position: absolute;
 }
 
-@keyframes run {
+@keyframes volar {
   0% {
     transform: translateX(-20vw);
   }
@@ -67,13 +67,13 @@ header {
 }
 
 .logo {
-  animation-name: backInRight;
+  animation-name: entrada;
   animation-duration: 2s;
   animation-timing-function: ease;
   animation-fill-mode: both;
 }
 
-@keyframes backInRight {
+@keyframes entrada {
   0% {
     transform: translateX(2000px) scale(0.7);
     opacity: 0.7;

@@ -152,28 +152,11 @@ iframe {
   border: none;
 }
 
-@keyframes reveal {
-  0% {
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  }
-  25% {
-    clip-path: polygon(40% 0%, 80% 25%, 60% 75%, 20% 50%);
-  }
-  50% {
-    clip-path: polygon(35% 0%, 75% 15%, 65% 85%, 15% 35%);
-  }
-  75% {
-    clip-path: polygon(32% 0%, 72% 10%, 70% 90%, 12% 30%);
-  }
-  100% {
-    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-  }
-}
+
 
 .song {
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
   width: 60%;
-  animation: reveal 3s ease-in-out forwards;
 }
 
 @keyframes rubberBand {

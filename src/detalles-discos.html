@@ -24,7 +24,6 @@
       rel="stylesheet"
       href="../node_modules/@splidejs/splide/dist/css/splide.min.css"
     />
-
     <script type="module" src="disk_carousel.js"></script>
   </head>
   <body>
@@ -32,17 +31,25 @@
     <main>
       <article>
         <h2>Disfruta de los discos de Glass Animals</h2>
-        <img src="./img/song.jpg" alt="Glass Animals song" />
+        <img
+          srcset="./img/song480.jpeg 480w, ./img/song800.jpeg 800w"
+          sizes="(max-width: 768px) 480px,
+         800px"
+          src="./img/song800.jpeg"
+          alt="Glass Animals song"
+          class = "song"
+        />
+        <img src="./img/sticker_11_green.png" alt="sticker" class="sticker" />
         <p>
           Glass Animals ha lanzado varios álbumes que reflejan la evolución
-          musical a lo largo de su trayectoria. Y cada disco posee <strong>su propio
-          estilo</strong>.
+          musical a lo largo de su trayectoria. Y cada disco posee
+          <strong>su propio estilo</strong>.
         </p>
-
+        <img src="./img/sticker_16_lblue.png" alt="sticker" class="sticker-left" />
         <p>
-          A continuación, se presentan las canciones de <strong>cuidadosa selección</strong> por
-          mí en su disco más destacado llamado
-          <i lang="en">How to be a human being</i>. Fue lanzado en 2016.
+          A continuación, se presentan las canciones de
+          <strong>cuidadosa selección</strong> por mí en su disco más destacado
+          llamado <i lang="en">How to be a human being</i>. Fue lanzado en 2016.
           Este álbum se inspiró en las historias de que Dave Bayley recogió de
           <b>personas que conoció</b> mientras estaba de gira.
         </p>
@@ -125,8 +132,9 @@
           </div>
         </div>
         <p class="end">
-          ¡Espero que hayas <b>disfrutado</b> su música! Si quieres conocer <b>cómo se les
-          inspiraron</b> estas creatividades, te invito a visitar la página de
+          ¡Espero que hayas <b>disfrutado</b> su música! Si quieres conocer
+          <b>cómo se les inspiraron</b> estas creatividades, te invito a visitar
+          la página de
           <a class="anchor" href="detalles-historias.html"
             >Historias de Canciones</a
           >, donde podrás descubrir las historias tras algunas de las canciones.

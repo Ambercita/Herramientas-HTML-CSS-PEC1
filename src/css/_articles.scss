@@ -151,3 +151,118 @@ article {
 iframe {
   border: none;
 }
+
+@keyframes reveal {
+  0% {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+  25% {
+    clip-path: polygon(40% 0%, 80% 25%, 60% 75%, 20% 50%);
+  }
+  50% {
+    clip-path: polygon(35% 0%, 75% 15%, 65% 85%, 15% 35%);
+  }
+  75% {
+    clip-path: polygon(32% 0%, 72% 10%, 70% 90%, 12% 30%);
+  }
+  100% {
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  }
+}
+
+.song {
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  width: 60%;
+  animation: reveal 3s ease-in-out forwards;
+}
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+@keyframes jello {
+  from,
+  11.1%,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  22% {
+    transform: skewX(-12.5deg) skewY(-12.5deg);
+  }
+
+  33% {
+    transform: skewX(6.25deg) skewY(6.25deg);
+  }
+
+  44% {
+    transform: skewX(-3.125deg) skewY(-3.125deg);
+  }
+
+  55% {
+    transform: skewX(1.5625deg) skewY(1.5625deg);
+  }
+
+  66% {
+    transform: skewX(-0.78125deg) skewY(-0.78125deg);
+  }
+
+  77% {
+    transform: skewX(0.390625deg) skewY(0.390625deg);
+  }
+
+  88% {
+    transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+  }
+}
+
+
+.miembros-foto {
+  width: 100%vw;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4rem;
+}
+
+.sticker {
+  width: 15%;
+  margin-right: 2rem;
+  float: right;
+  overflow: hidden;
+  animation:cubic-bezier(1, 0, 0, 1) 3s infinite jello;
+}
+
+.sticker-left {
+  width: 15%;
+  margin-left: 3rem;
+  float: left;
+  overflow: hidden;
+  animation:cubic-bezier(1, 0, 0, 1) 3s infinite rubberBand;
+}

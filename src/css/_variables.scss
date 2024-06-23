@@ -5,16 +5,19 @@ $font-menu: "Kode Mono", sans-serif;
 @font-face {
   font-family: "Kode Mono";
   src: url(../fonts/A2BYn5pb0QgtVEPFnlYOnYLweZGZuA.woff2) format("woff2");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Lilita One";
   src: url(../fonts/i7dPIFZ9Zz-WBtRtedDbYEF8RXi4EwQ.woff2) format("woff2");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Tilt Neon";
   src: url(../fonts/E21L_d7gguXdwD9LEFY2WCeElCNtd-eBqpHp1TzrkJSmwpj5ndxquUK6UOGHIsDTJGc.woff) format("woff2");
+  font-display: swap;
 }
 
 $amethyst: rgba(155, 93, 229, 1);

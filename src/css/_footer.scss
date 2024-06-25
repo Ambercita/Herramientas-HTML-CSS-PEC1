@@ -38,6 +38,7 @@ footer {
     right: 0;
     height: 100px;
     width: 100px;
+    overflow: clip;
 
     > img {
       animation: girar 3s linear infinite;

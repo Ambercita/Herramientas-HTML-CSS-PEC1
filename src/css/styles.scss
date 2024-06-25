@@ -136,8 +136,8 @@ main {
       40% 20%,
       40% 0%,
       40% 0%,
-      75% 40%,
-      75% 40%,
+      85% 40%,
+      85% 40%,
       40% 80%,
       40% 80%,
       40% 60%,
@@ -165,7 +165,11 @@ main {
 }
 
 .youth {
-  width: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 ol {
